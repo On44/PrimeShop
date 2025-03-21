@@ -1,0 +1,172 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #1a1a1a; /* Dark gray for premium feel */
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.footer-column {
+  padding: 0 15px;
+}
+
+.footer-title {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #007bff; /* Prime Shop blue */
+  font-weight: 700;
+}
+
+.footer-description {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-info {
+  font-size: 0.85em;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff; /* Blue hover effect */
+}
+
+/* Footer List */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.footer-list li {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #28a745; /* Green hover for consistency */
+}
+
+/* Trust & Security */
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.badge.ssl {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85em;
+}
+
+.badge-image {
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Payment Methods */
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.payment-icon {
+  height: 25px;
+  filter: brightness(0) invert(1); /* White icons */
+  transition: filter 0.3s;
+}
+
+.payment-icon:hover {
+  filter: brightness(1) invert(0); /* Original color on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-copyright {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.footer-copyright a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .footer-title {
+    font-size: 1.2em;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .social-links, .trust-badges, .payment-methods {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-title {
+    font-size: 1.1em;
+  }
+
+  .footer-list li {
+    font-size: 0.85em;
+  }
+}

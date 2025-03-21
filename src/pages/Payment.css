@@ -1,0 +1,328 @@
+/* Payment and Security Policy Page */
+.payment-security-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for consistency */
+    color: #333;
+    width: 100vw; /* Full width */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding to ensure full width */
+  }
+  
+  /* Payment and Security Content */
+  .payment-security-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding for content breathing room */
+    background-color: #fff; /* White background for content area */
+    border-radius: 0 0 8px 8px; /* Subtle rounded corners at bottom */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  /* Header */
+  .payment-header {
+    text-align: center;
+    padding: 60px 0; /* Increased padding for prominence */
+    background-color: #ff0000; /* Red like FilFoods */
+    color: white;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    margin-bottom: 40px; /* Increased margin */
+    font-size: 44px; /* Larger, eye-catching header */
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+    width: 100vw; /* Full width */
+  }
+  
+  .payment-header h1 {
+    font-size: 48px; /* Larger heading */
+    margin-bottom: 20px; /* Increased margin */
+    line-height: 1.2;
+  }
+  
+  .payment-header p {
+    font-size: 22px; /* Larger paragraph */
+    line-height: 1.5;
+  }
+  
+  /* Payment Methods */
+  .payment-methods {
+    margin-bottom: 40px;
+  }
+  
+  .payment-methods h2 {
+    font-size: 32px; /* Larger heading */
+    color: #2c3e50;
+    margin-bottom: 20px; /* Increased margin */
+    line-height: 1.2;
+  }
+  
+  .payment-methods p {
+    font-size: 18px; /* Larger paragraph */
+    color: #666;
+    margin-bottom: 20px; /* Increased margin */
+    line-height: 1.5;
+  }
+  
+  .payment-methods ul {
+    list-style: disc;
+    padding-left: 25px; /* Increased padding */
+    font-size: 18px; /* Larger list items */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Increased margin */
+  }
+  
+  /* Security Measures */
+  .security-measures {
+    margin-bottom: 40px;
+  }
+  
+  .security-measures h2 {
+    font-size: 32px; /* Larger heading */
+    color: #2c3e50;
+    margin-bottom: 20px; /* Increased margin */
+    line-height: 1.2;
+  }
+  
+  .security-measures p {
+    font-size: 18px; /* Larger paragraph */
+    color: #666;
+    margin-bottom: 20px; /* Increased margin */
+    line-height: 1.5;
+  }
+  
+  .security-measures ul {
+    list-style: disc;
+    padding-left: 25px; /* Increased padding */
+    font-size: 18px; /* Larger list items */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Increased margin */
+  }
+  
+  /* Privacy Policy */
+  .privacy-policy {
+    margin-bottom: 40px;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 32px; /* Larger heading */
+    color: #2c3e50;
+    margin-bottom: 20px; /* Increased margin */
+    line-height: 1.2;
+  }
+  
+  .privacy-policy p {
+    font-size: 18px; /* Larger paragraph */
+    color: #666;
+    margin-bottom: 20px; /* Increased margin */
+    line-height: 1.5;
+  }
+  
+  .privacy-policy ul {
+    list-style: disc;
+    padding-left: 25px; /* Increased padding */
+    font-size: 18px; /* Larger list items */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Increased margin */
+  }
+  
+  .privacy-link {
+    color: #00008b; /* Blue link */
+    text-decoration: none;
+  }
+  
+  .privacy-link:hover {
+    color: #0000a0; /* Darker blue on hover */
+    text-decoration: underline;
+  }
+  
+  /* Payment FAQ */
+  .payment-faq {
+    margin-bottom: 40px;
+  }
+  
+  .payment-faq h2 {
+    font-size: 32px; /* Larger heading */
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+    line-height: 1.2;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; /* Increased gap */
+  }
+  
+  .faq-item {
+    background-color: white;
+    padding: 25px; /* Increased padding */
+    border-radius: 10px; /* Larger radius */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .faq-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .faq-item h3 {
+    font-size: 24px; /* Larger question */
+    color: #333;
+    margin-bottom: 15px; /* Increased margin */
+    line-height: 1.2;
+  }
+  
+  .faq-item p {
+    font-size: 18px; /* Larger answer */
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .faq-item a {
+    color: #00008b; /* Blue link */
+    text-decoration: none;
+  }
+  
+  .faq-item a:hover {
+    color: #0000a0; /* Darker blue on hover */
+    text-decoration: underline;
+  }
+  
+  /* Back to Home Button */
+  .back-home-btn {
+    display: block;
+    margin: 40px auto; /* Increased margin for prominence */
+    background-color: #00008b; /* Blue like FilFoods */
+    color: white;
+    padding: 20px 45px; /* Larger, prominent padding */
+    border: none;
+    border-radius: 10px; /* Larger radius */
+    text-decoration: none;
+    font-size: 22px; /* Larger font */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 300px; /* Larger width */
+    line-height: 1.5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .back-home-btn:hover {
+    background-color: #0000a0; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .payment-security-content {
+      padding: 15px; /* Slightly smaller on mobile */
+      border-radius: 0; /* Remove rounded corners on mobile */
+    }
+  
+    .payment-header {
+      padding: 40px 0; /* Slightly smaller on mobile */
+      font-size: 36px; /* Slightly smaller header */
+    }
+  
+    .payment-header h1 {
+      font-size: 40px; /* Slightly smaller heading */
+    }
+  
+    .payment-header p {
+      font-size: 18px; /* Slightly smaller paragraph */
+    }
+  
+    .payment-methods h2,
+    .security-measures h2,
+    .privacy-policy h2,
+    .payment-faq h2 {
+      font-size: 28px; /* Slightly smaller on mobile */
+    }
+  
+    .payment-methods p,
+    .security-measures p,
+    .privacy-policy p,
+    .payment-methods ul,
+    .security-measures ul,
+    .privacy-policy ul {
+      font-size: 16px; /* Slightly smaller on mobile */
+      line-height: 1.4;
+    }
+  
+    .faq-grid {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 20px; /* Slightly smaller gap */
+    }
+  
+    .faq-item {
+      padding: 20px; /* Slightly smaller on mobile */
+      border-radius: 8px; /* Slightly smaller radius */
+    }
+  
+    .faq-item h3 {
+      font-size: 20px; /* Slightly smaller on mobile */
+    }
+  
+    .faq-item p {
+      font-size: 16px; /* Slightly smaller on mobile */
+    }
+  
+    .back-home-btn {
+      margin: 30px auto; /* Slightly smaller on mobile */
+      padding: 15px 35px; /* Slightly smaller on mobile */
+      font-size: 18px; /* Slightly smaller on mobile */
+      width: 250px; /* Slightly smaller width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .payment-header {
+      padding: 30px 0; /* Smaller on very small screens */
+      font-size: 32px; /* Smaller header */
+    }
+  
+    .payment-header h1 {
+      font-size: 36px; /* Smaller heading */
+    }
+  
+    .payment-header p {
+      font-size: 16px; /* Smaller paragraph */
+    }
+  
+    .payment-methods h2,
+    .security-measures h2,
+    .privacy-policy h2,
+    .payment-faq h2 {
+      font-size: 24px; /* Smaller on very small screens */
+    }
+  
+    .payment-methods p,
+    .security-measures p,
+    .privacy-policy p,
+    .payment-methods ul,
+    .security-measures ul,
+    .privacy-policy ul {
+      font-size: 14px; /* Smaller on very small screens */
+      line-height: 1.3;
+    }
+  
+    .faq-item {
+      padding: 15px; /* Smaller on very small screens */
+    }
+  
+    .faq-item h3 {
+      font-size: 18px; /* Smaller on very small screens */
+    }
+  
+    .faq-item p {
+      font-size: 14px; /* Smaller on very small screens */
+    }
+  
+    .back-home-btn {
+      margin: 20px auto; /* Smaller on very small screens */
+      padding: 12px 30px; /* Smaller on very small screens */
+      font-size: 16px; /* Smaller on very small screens */
+      width: 200px; /* Smaller width */
+    }
+  }

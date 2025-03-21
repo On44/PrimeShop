@@ -1,0 +1,114 @@
+.sales-report-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .date-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .date-filter label {
+    display: block;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .date-filter input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .date-filter button {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .date-filter button:hover {
+    background-color: #0056b3;
+  }
+  
+  .sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .sales-table th,
+  .sales-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .sales-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .sales-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .back-btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .sales-report-container {
+      padding: 10px;
+    }
+  
+    .date-filter {
+      flex-direction: column;
+    }
+  
+    .date-filter label {
+      margin-bottom: 10px;
+    }
+  
+    .date-filter button {
+      margin-top: 10px;
+    }
+  
+    .sales-table th,
+    .sales-table td {
+      font-size: 12px;
+    }
+  
+    .back-btn {
+      width: 100%;
+    }
+  }

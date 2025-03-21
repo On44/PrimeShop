@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
+/* Global Styles for Prime Boutique */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light gray background for consistency */
+  color: #333;
+  font-size: 18px; /* Larger base font for readability (desktop) */
+  line-height: 1.5; /* Improved readability */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure body takes full width */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App Container */
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  width: 100vw; /* Use viewport width for full coverage */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+}
+
+/* Content Container */
+.content-container {
+  flex: 1;
+  padding: 20px; /* Added padding for content breathing room */
+  margin: 0 auto;
+  max-width: 1200px; /* Maintain max-width for content, but navbar/footer full-width */
+  background-color: #fff; /* White background for content area */
+  border-radius: 0 0 8px 8px; /* Subtle rounded corners at bottom */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Navbar and Footer Full Width */
+.navbar,
+.footer {
+  width: 100vw; /* Use viewport width for full coverage */
+  margin: 0; /* Remove margins */
+  left: 0; /* Ensure it starts at the left edge */
+  right: 0; /* Ensure it extends to the right edge */
+  padding: 0; /* Remove padding to ensure full width */
+}
+
+/* Links */
+a {
+  color: #00008b; /* Blue like FilFoods for links */
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 18px; /* Larger font */
+  line-height: 1.5;
+}
+
+a:hover {
+  color: #0000a0; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50; /* Dark blue-gray for headings */
+  margin-bottom: 20px; /* Increased margin for readability */
+  line-height: 1.2; /* Tighter line height for headings */
+}
+
+h1 {
+  font-size: 40px; /* Larger heading */
+}
+
+h2 {
+  font-size: 30px; /* Larger subheading */
+}
+
+h3 {
+  font-size: 24px; /* Larger sub-subheading */
+}
+
+h4 {
+  font-size: 20px; /* Larger sub-subheading */
+}
+
+/* Paragraphs and Text */
+p {
+  font-size: 18px; /* Larger paragraph text */
+  margin-bottom: 20px; /* Increased margin */
+  line-height: 1.5; /* Improved readability */
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: #00008b; /* Blue like FilFoods */
   color: white;
+  padding: 15px 30px; /* Larger padding */
+  border: none;
+  border-radius: 8px; /* Larger radius */
+  cursor: pointer;
+  font-size: 18px; /* Larger font */
+  transition: background-color 0.3s;
+  line-height: 1.5;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover,
+.btn:hover {
+  background-color: #0000a0; /* Darker blue on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Forms */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 15px; /* Larger padding */
+  border: 2px solid #ddd; /* Thicker border */
+  border-radius: 6px; /* Larger radius */
+  font-size: 16px; /* Larger font */
+  line-height: 1.5;
+  margin-bottom: 15px; /* Increased margin */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #00008b; /* Blue focus outline */
+  outline: none;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 20px; /* Increased margin */
+  padding-left: 25px; /* Increased padding */
+  font-size: 18px; /* Larger list items */
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 15px; /* Increased margin */
+}
+
+/* Cards and Sections */
+.card,
+.info-card,
+.promo-card,
+.news-card {
+  background-color: white;
+  padding: 25px; /* Increased padding */
+  border-radius: 10px; /* Larger radius */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  margin-bottom: 20px; /* Increased margin */
+}
+
+/* Red Sections (e.g., navbar-nav, products-red-section, remittance-red-section) */
+.red-section {
+  background-color: #ff0000; /* Red like FilFoods */
+  color: white;
+  padding: 20px 0; /* Full-width padding, no side margins */
+  font-size: 20px; /* Larger font for readability */
+  line-height: 1.5; /* Improved readability */
+  width: 100vw; /* Use viewport width for full coverage */
+  margin: 0; /* Remove margins */
+}
+
+/* Footer Specific Styling */
+.footer {
+  background-color: #333; /* Dark background for contrast */
+  color: white;
+  padding: 40px 0; /* Full-width padding */
+  position: relative; /* Ensure it stays at the bottom */
+  bottom: 0; /* Stick to the bottom of the viewport */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: 100vw; /* Use viewport width for full coverage */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Slightly smaller on mobile */
+    line-height: 1.4;
   }
-  to {
-    transform: rotate(360deg);
+
+  a {
+    font-size: 16px; /* Slightly smaller on mobile */
+  }
+
+  h1 {
+    font-size: 32px; /* Slightly smaller on mobile */
+  }
+
+  h2 {
+    font-size: 24px; /* Slightly smaller on mobile */
+  }
+
+  h3 {
+    font-size: 20px; /* Slightly smaller on mobile */
+  }
+
+  h4 {
+    font-size: 18px; /* Slightly smaller on mobile */
+  }
+
+  p {
+    font-size: 16px; /* Slightly smaller on mobile */
+  }
+
+  ul, ol {
+    font-size: 16px; /* Slightly smaller on mobile */
+  }
+
+  button,
+  .btn {
+    padding: 12px 25px; /* Slightly smaller on mobile */
+    font-size: 16px; /* Slightly smaller on mobile */
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 12px; /* Slightly smaller on mobile */
+    font-size: 14px; /* Slightly smaller on mobile */
+  }
+
+  .card,
+  .info-card,
+  .promo-card,
+  .news-card {
+    padding: 20px; /* Slightly smaller on mobile */
+    border-radius: 8px; /* Slightly smaller radius */
+  }
+
+  .red-section {
+    padding: 15px 0; /* Adjusted padding for mobile */
+    font-size: 18px; /* Slightly smaller on mobile */
+    line-height: 1.4;
+  }
+
+  .footer {
+    padding: 30px 0; /* Slightly smaller on mobile */
+  }
+
+  .content-container {
+    padding: 15px; /* Slightly smaller on mobile */
+    border-radius: 0; /* Remove rounded corners on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Smaller on very small screens */
+    line-height: 1.3;
+  }
+
+  a {
+    font-size: 14px; /* Smaller on very small screens */
+  }
+
+  h1 {
+    font-size: 28px; /* Smaller on very small screens */
+  }
+
+  h2 {
+    font-size: 20px; /* Smaller on very small screens */
+  }
+
+  h3 {
+    font-size: 18px; /* Smaller on very small screens */
+  }
+
+  h4 {
+    font-size: 16px; /* Smaller on very small screens */
+  }
+
+  p {
+    font-size: 14px; /* Smaller on very small screens */
+  }
+
+  ul, ol {
+    font-size: 14px; /* Smaller on very small screens */
+  }
+
+  button,
+  .btn {
+    padding: 10px 20px; /* Smaller on very small screens */
+    font-size: 14px; /* Smaller on very small screens */
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 10px; /* Smaller on very small screens */
+    font-size: 12px; /* Smaller on very small screens */
+  }
+
+  .card,
+  .info-card,
+  .promo-card,
+  .news-card {
+    padding: 15px; /* Smaller on very small screens */
+    border-radius: 6px; /* Smaller radius */
+  }
+
+  .red-section {
+    padding: 10px 0; /* Adjusted padding for very small screens */
+    font-size: 16px; /* Smaller on very small screens */
+    line-height: 1.3;
+  }
+
+  .footer {
+    padding: 20px 0; /* Smaller on very small screens */
+  }
+
+  .footer-content {
+    gap: 15px; /* Smaller gap on very small screens */
+  }
+
+  .content-container {
+    padding: 10px; /* Smaller on very small screens */
   }
 }

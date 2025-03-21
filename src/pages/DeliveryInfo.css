@@ -1,0 +1,268 @@
+/* src/pages/DeliveryInfo.css */
+.delivery-info-page {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.delivery-info-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.delivery-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.delivery-header h1 {
+  font-size: 2.5em;
+  color: #007bff; /* Prime Shop blue */
+  margin-bottom: 10px;
+}
+
+.delivery-header p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.track-order-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #28a745; /* Green for action */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.track-order-btn:hover {
+  background-color: #218838;
+}
+
+/* Delivery Options */
+.delivery-options {
+  margin-bottom: 50px;
+}
+
+.delivery-options h2 {
+  font-size: 2em;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.option-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.option-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.option-card h3 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.option-card p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.option-card strong {
+  color: #28a745; /* Green for emphasis */
+}
+
+/* Shipping Details */
+.shipping-details {
+  margin-bottom: 50px;
+}
+
+.shipping-details h2 {
+  font-size: 2em;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.detail-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.detail-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.detail-card p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.inline-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.inline-link:hover {
+  color: #28a745;
+}
+
+/* FAQ Section */
+.delivery-faq {
+  margin-bottom: 50px;
+}
+
+.delivery-faq h2 {
+  font-size: 2em;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  border-top: 1px solid #ddd;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: #f1f3f5;
+}
+
+.faq-question.active {
+  background: #007bff;
+  color: white;
+}
+
+.faq-toggle {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  background: #fff;
+  padding: 0 20px;
+}
+
+.faq-answer.open {
+  max-height: 150px; /* Adjust based on content */
+  padding: 15px 20px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Back to Home Button */
+.back-home-btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-home-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .delivery-header h1 {
+    font-size: 2em;
+  }
+
+  .delivery-options h2, .shipping-details h2, .delivery-faq h2 {
+    font-size: 1.8em;
+  }
+
+  .option-grid, .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-question {
+    font-size: 1em;
+    padding: 12px 15px;
+  }
+
+  .faq-answer.open {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-header h1 {
+    font-size: 1.8em;
+  }
+
+  .delivery-header p {
+    font-size: 1em;
+  }
+
+  .option-card, .detail-card {
+    padding: 15px;
+  }
+
+  .back-home-btn {
+    width: 150px;
+  }
+}

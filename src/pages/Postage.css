@@ -1,0 +1,77 @@
+.postage-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .postage-table {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .postage-table table {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  .postage-table th, .postage-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .postage-table th {
+    background: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .postage-table td {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .postage-info {
+    text-align: left;
+    padding: 15px;
+    background: #fffbeb;
+    border-radius: 8px;
+    border-left: 5px solid #ffb100;
+    margin-top: 20px;
+  }
+  
+  .postage-info h2 {
+    color: #ff9000;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .postage-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .postage-info li {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  

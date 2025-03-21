@@ -1,0 +1,186 @@
+/* src/Flights.css */
+.flights-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e0e7ff 100%);
+  padding: 2rem;
+}
+
+.flights-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.flights-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.flights-header h1 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.flights-header p {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+/* Promotions Grid */
+.flights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.flight-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.flight-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.flight-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.flight-card:hover .flight-image {
+  transform: scale(1.05);
+}
+
+.flight-details {
+  padding: 1.5rem;
+}
+
+.flight-details h2 {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.flight-details p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.book-now-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+}
+
+/* Benefits Section */
+.flights-benefits {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.flights-benefits h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+}
+
+.benefit-card h3 {
+  font-size: 1.25rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+/* Back to Home Button */
+.back-home-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background: #e2e8f0;
+  color: #1e3a8a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flights-header h1 {
+    font-size: 2rem;
+  }
+
+  .flights-header p {
+    font-size: 1rem;
+  }
+
+  .flight-card {
+    margin: 0 1rem;
+  }
+
+  .flights-benefits h2 {
+    font-size: 1.5rem;
+  }
+}

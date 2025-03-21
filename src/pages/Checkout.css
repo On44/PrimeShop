@@ -1,0 +1,132 @@
+/* src/pages/Checkout.css */
+.checkout-page {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .checkout-page h1 {
+    font-size: 2.5em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .loading {
+    font-size: 1.2em;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .checkout-error {
+    color: #dc3545;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form, .payment-options, .order-summary {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .checkout-form h2, .payment-options h2, .order-summary h2 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input, .payment-options select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .form-group input:disabled, .payment-options select:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: #dc3545;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  .order-summary .summary-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .order-summary .summary-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .order-summary .total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+  }
+  
+  .place-order {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .place-order:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .place-order:hover:not(:disabled) {
+    background-color: #218838;
+  }
+  
+  .shop-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .shop-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .checkout-page h1 {
+      font-size: 2em;
+    }
+  
+    .checkout-form, .payment-options, .order-summary {
+      padding: 15px;
+    }
+  }

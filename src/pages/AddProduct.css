@@ -1,0 +1,34 @@
+/* src/pages/AddProduct.css */
+.add-product-page {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.add-product-page h1 {
+  text-align: center;
+}
+
+.add-product-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-product-page input,
+.add-product-page select {
+  padding: 5px;
+}
+
+.add-product-page button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

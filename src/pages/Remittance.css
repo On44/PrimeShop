@@ -1,0 +1,213 @@
+/* Remittance Page */
+.remittance-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Remittance Content */
+  .remittance-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .remittance-header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: white; /* Red like FilFoods */
+    color: rgb(9, 8, 8);
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .remittance-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .remittance-header p {
+    font-size: 18px;
+  }
+  
+  /* Info Section */
+  .remittance-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .info-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .info-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .info-card ul,
+  .info-card ol {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .info-card ol {
+    list-style: decimal;
+  }
+  
+  .contact-link {
+    display: inline-block;
+    background-color: #00008b; /* Blue like FilFoods */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-link:hover {
+    background-color: #0000a0;
+  }
+  
+  /* FAQ Section */
+  .remittance-faq {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .remittance-faq h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .faq-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Back to Home Button */
+  .back-home-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #00008b;
+    color: white;
+    padding: 12px 25px; /* Larger padding */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    width: 200px; /* Fixed width for consistency */
+  }
+  
+  .back-home-btn:hover {
+    background-color: #0000a0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .remittance-content {
+      padding: 15px;
+    }
+  
+    .remittance-header {
+      padding: 20px 0;
+    }
+  
+    .remittance-header h1 {
+      font-size: 28px;
+    }
+  
+    .remittance-header p {
+      font-size: 16px;
+    }
+  
+    .remittance-info {
+      grid-template-columns: 1fr;
+    }
+  
+    .info-card {
+      padding: 15px;
+    }
+  
+    .info-card h2 {
+      font-size: 20px;
+    }
+  
+    .info-card p, .info-card ul, .info-card ol {
+      font-size: 14px;
+    }
+  
+    .remittance-faq {
+      padding: 15px;
+    }
+  
+    .remittance-faq h2 {
+      font-size: 20px;
+    }
+  
+    .faq-item h3 {
+      font-size: 16px;
+    }
+  
+    .faq-item p {
+      font-size: 14px;
+    }
+  
+    .back-home-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .remittance-header h1 {
+      font-size: 24px;
+    }
+  
+    .remittance-header p {
+      font-size: 14px;
+    }
+  
+    .info-card {
+      margin-bottom: 15px;
+    }
+  
+    .back-home-btn {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
